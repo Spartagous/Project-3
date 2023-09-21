@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.color {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: top;
+}
+
+.text-fonts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.color-element {
+    padding: 25px;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.font {
+    margin-bottom: 20px;
+}
+
+.font-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.font-styles {
+    font-style: italic;
+}
+
+.text-styles {
+    margin-bottom: 20px;
+}
+
+.style-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.style-font-size {
+    font-size: 16px;
+    /* Adjust font size as needed for mobile */
+}
+
+.style-rule {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.style-sample {
+    font-size: 14px;
+    /* Adjust font size as needed for mobile */
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .style-font-size {
+        font-size: 14px;
+    }
+
+    .style-sample {
+        font-size: 12px;
+    }
+
+    .color {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: top;
+    }
+
+    .text-fonts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
